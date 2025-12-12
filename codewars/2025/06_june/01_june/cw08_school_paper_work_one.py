@@ -9,6 +9,6 @@ def paperwork(n, m):
 
 @my_decorator
 def test_result_test():
-    print(f"\n{paperwork(1, 5)}")
-    print(f"\n{paperwork(1, -1)}")
-    pass
+    assert paperwork(5, 5) == 25
+    assert paperwork(1, 2) == 2
+    assert paperwork(-5, -5) == 0
