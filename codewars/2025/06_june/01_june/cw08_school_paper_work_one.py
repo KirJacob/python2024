@@ -1,10 +1,13 @@
+from codewars.decorators_file import my_decorator
+
+
 def paperwork(n, m):
     if n > 0 and m > 0:
         return n * m
     else:
         return 0
 
-
+@my_decorator
 def test_result_test():
     assert paperwork(5, 5) == 25
     assert paperwork(1, 2) == 2
